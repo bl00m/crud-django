@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USER FUN</title>
+
+	{% load staticfiles %}
+	<link type="text/css" href="{% static "main.css" %}" rel="stylesheet"/>
+	<script src="{% static "js/jquery-2.0.3.js" %}"></script>
+	<script src="{% static "js/ajax.js" %}"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+
+	<div class="title-wrap">
+		<a href="/users" id="main-title">Users</a>
+	</div>
+	{% block content %}
+
+	{% endblock %}
+	</div>
+</body>
+</html>

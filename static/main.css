@@ -1,0 +1,48 @@
+.wrapper {
+	font-family: Helvetica, Arial, sans-serif;
+	color:#2d2e2e;
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/* title */
+.title-wrap {
+	text-align:center;
+	font-size: 30px;
+	padding: 0 0 20px 0;
+}
+
+#main-title {
+	color:#2d2e2e;
+	text-decoration:none;
+}
+
+#main-title-visited {
+	color:#2d2e2e;
+	text-decoration:none;
+}
+
+/* body content */
+#create-user {
+	text-decoration: none;
+	color: #2d2e2e;
+	font-size:20px;
+}
+
+#create-user {
+	text-decoration: none;
+	color: #2d2e2e;
+}
+.content {
+	margin: 0 10px;
+}
+
+.user-data {
+	display: block;
+	padding: 15px 15px 10px 25px;
+}
+
+.user-data input {
+	margin: 2px 0 2px 1px;
+}

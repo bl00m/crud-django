@@ -35,9 +35,8 @@ def edit_user(request, user_id):
 	return render(request, 'edit_user.html', {'form': form})
 
 def delete_user(request, user_id):
-	cert = {}
-	cert.update(csrf(request))
-
-	user = get_object_or_404(User, id = user_id)
-	user.delete()
-	return HttpResponse(status = 200)
+	if request.method == "POST":
+		user = get_object_or_404(User, id = user_id)
+		user.delete()
+		return HttpResponse(status = 200)
+	return HttpResponse(status = 404)
